@@ -10,7 +10,7 @@
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>me.ujung.projectm.config.ApplicationConfig</param-value>
+    <param-value>com.example.helloworld.config.ApplicationConfig</param-value>
   </context-param>
 
   <listener>
@@ -26,7 +26,7 @@
     </init-param>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>me.ujung.projectm.config.WebConfig</param-value>
+      <param-value>com.example.helloworld.config.WebConfig</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -66,7 +66,6 @@
       <url-pattern>*.jsp</url-pattern>
       <page-encoding>UTF-8</page-encoding>
       <scripting-invalid>false</scripting-invalid>
-      <include-prelude>/WEB-INF/views/base.jspf</include-prelude>
       <trim-directive-whitespaces>true</trim-directive-whitespaces>
       <default-content-type>text/html</default-content-type>
     </jsp-property-group>
